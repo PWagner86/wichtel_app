@@ -11,6 +11,7 @@ const message = document.querySelector('.result h3');
 const restartBtn = document.querySelector('.restart');
 
 // Song
+const songBtn = document.querySelector('.song-btn');
 const christmasSong = document.querySelector('.christmas-song');
 
 // verschiedene Variablen
@@ -19,7 +20,7 @@ const buttons = [];
 let gameover = false;
 
 // Weihnachtssong soll spielen
-christmasSong.play();
+songBtn.addEventListener('click', () => christmasSong.play());
 
 // Event um die Teilnehmer anzufügen
 addBtn.addEventListener('click', (e) => {
