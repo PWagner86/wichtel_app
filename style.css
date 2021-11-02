@@ -1,0 +1,176 @@
+:root{
+    --mainFont: 'Mountains of Christmas', cursive;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--mainFont);
+    width: 100vw;
+    height: 100vh;
+    background: url('./pics/pexels-giftpunditscom-1303082.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+header h1{
+    padding: 0 2rem;
+    font-size: 15vmin;
+}
+
+article{
+    max-width: 1700px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 4rem;
+}
+
+form{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 4vmin;
+    font-weight: bold;
+}
+
+form label input{
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 4vmin;
+    font-family: var(--mainFont);
+    border-radius: 3px;
+    border: none;
+    background: rgb(179, 47, 47);
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+form label input:hover{
+    box-shadow: 0 0 10px 3px rgb(240, 186, 8);
+}
+
+form .add{
+    padding: 0.5rem;
+    font-family: var(--mainFont);
+    font-size: 4vmin;
+    border: none;
+    background: rgb(8, 76, 155);
+    color: white;
+    border-radius: 3px;
+    transition: ease-in-out 0.3s;
+}
+
+form .add:hover{
+    box-shadow: 0 0 10px 3px rgb(240, 186, 8);
+}
+
+.list-wrapper{
+    width: 100%;
+}
+
+.list-wrapper h2{
+    font-size: 4vmin;
+}
+
+.list-wrapper ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.list-wrapper ul button{
+    padding: 1rem;
+    margin: 1rem;
+    font-family: var(--mainFont);
+    font-weight: bold;
+    font-size: 4vmin;
+    border: none;
+    border-radius: 3px;
+    background: rgb(11, 105, 11);
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.list-wrapper ul button:hover{
+    box-shadow: 0 0 10px 3px rgb(240, 186, 8);
+}
+
+.result{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result h2{
+    font-size: 8vmin;
+    color: rgb(243, 243, 64);
+}
+
+.result h3{
+    font-size: 4vmin;
+    text-align: center;
+}
+
+.result h3 span{
+    color: red;
+    font-size: 5vmin;
+}
+
+.result .restart{
+    width: 80%;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    font-family: var(--mainFont);
+    font-size: 4vmin;
+    font-weight: bold;
+    background: rgb(11, 105, 11);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: ease-in-out 0.3s;
+    display: none;
+}
+
+.result .restart:hover{
+    box-shadow: 0 0 10px 3px rgb(240, 186, 8);
+}
+
+.fade{
+    opacity: 0;
+    pointer-events: none;
+}
+
+button{
+    cursor: pointer;
+}
