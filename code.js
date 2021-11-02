@@ -10,10 +10,16 @@ const resultName = document.querySelector('.result h2');
 const message = document.querySelector('.result h3');
 const restartBtn = document.querySelector('.restart');
 
+// Song
+const christmasSong = document.querySelector('.christmas-song');
+
 // verschiedene Variablen
 const names = [];
 const buttons = [];
 let gameover = false;
+
+// Weihnachtssong soll spielen
+christmasSong.play();
 
 // Event um die Teilnehmer anzufügen
 addBtn.addEventListener('click', (e) => {
