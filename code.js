@@ -11,7 +11,8 @@ const message = document.querySelector('.result h3');
 const restartBtn = document.querySelector('.restart');
 
 // Song
-const songBtn = document.querySelector('.song-btn');
+const songPlay = document.querySelector('.play');
+const songPause = document.querySelector('.pause');
 const christmasSong = document.querySelector('.christmas-song');
 
 // verschiedene Variablen
@@ -20,7 +21,11 @@ const buttons = [];
 let gameover = false;
 
 // Weihnachtssong soll spielen
-songBtn.addEventListener('click', () => christmasSong.play());
+songPlay.addEventListener('click', () => {
+    christmasSong.play();
+    songPause.style.display = "block";
+});
+songPause.addEventListener('click', () => christmasSong.pause());
 
 // Event um die Teilnehmer anzufügen
 addBtn.addEventListener('click', (e) => {

@@ -44,6 +44,16 @@ header .song-btn{
     border: none;
     border-radius: 3px;
     color: white;
+    transition: ease-in-out 0.3s;
+}
+
+header .song-btn:hover{
+    box-shadow: 0 0 10px 3px rgb(240, 186, 8);
+}
+
+header .pause{
+    margin-left: 4rem;
+    display: none;
 }
 
 article{
